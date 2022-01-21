@@ -15,7 +15,9 @@
         // 'default_graph_version' => 'v2.4'
     // ]);
     $helper = $fb -> getRedirectLoginHelper();
-    $login_url = $helper -> getLoginUrl('http://localhost/bisnes-user/');
+    // $login_url = $helper -> getLoginUrl('http://localhost/bisnes-user/');
+    $login_url = $helper -> getLoginUrl('https://bisnes-user.herokuapp.com/');
+
     try{
         // if (isset($_SESSION['facebook_access_token'])) {
         //     $accessToken = $_SESSION['facebook_access_token'];
@@ -25,7 +27,7 @@
         $accessToken = $helper->getAccessToken();
         if(isset($accessToken)){
             $_SESSION['access_token'] = (string)$accessToken;
-            header("Location:profile.php");
+            header("https://bisnes-user.herokuapp.com/profile.php");
         }
         // print('ok');
     }
