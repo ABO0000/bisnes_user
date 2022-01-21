@@ -27,7 +27,7 @@
         $accessToken = $helper->getAccessToken();
         if(isset($accessToken)){
             $_SESSION['access_token'] = (string)$accessToken;
-            header("https://bisnes-user.herokuapp.com/profile.php");
+            header("https://bisnes-user.herokuapp.com/");
         }
         // print('ok');
     }
