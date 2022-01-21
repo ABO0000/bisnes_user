@@ -6,7 +6,7 @@ session_start();
   }
   
   
-  // include "login.php";
+  include "login.php";
   include "fbconfig.php";
 
 
@@ -64,12 +64,12 @@ session_start();
                 <i>Log in with Twitter</i>
               </button>
             </a>
-              <!-- <?php echo "<a href='" . $client->createAuthUrl() . "'>"?></i>
+              <?php echo "<a href='" . $client->createAuthUrl() . "'>"?></i>
                 
                 <button class="social-signin google">
                   <i>Log in with Google+</i>
                 </button>
-              <?php "</a>"?> -->
+              <?php "</a>"?>
             <p class='login-register-text'>Don't have an account<a href="register.php">Sign Up here</a></p>
         </div>
         <div class="or" style="margin-top: -35px;">OR</div>
