@@ -478,7 +478,7 @@
                 <div class="ui example11" style="margin-bottom:-15px;padding-left:0px; height:40px; position:static;margin-top:80px"!important>
                 <!-- <div class="ui example11" style="margin-bottom:5px"> -->
                   <input type="text" name="addDate" placeholder="Date" style="width: 200px;margin-top:-80px;color:black" autoComplete="off" >
-                  <button style="">Add</button>
+                  <button>Add</button>
                   
                   <div class="ui input"></div>
                   
