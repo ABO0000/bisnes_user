@@ -940,7 +940,6 @@
           let allusers = JSON.parse(response)[2]
           let mydiv = document.createElement('div')
           mydiv.style.width = '100%'
-          mydiv.style.color = 'yellow'
           
           let id = 0
 
@@ -960,7 +959,7 @@
             form1.method="post" 
             form1.action="config.php"
             let h1 = document.createElement('h1')
-            h1.innerHTML = 'You will must at the ' + user + ' office at ' + time 
+            h1.innerHTML = time + ' You have to meet with ' + user
             h1.style.color = 'black'
             h1.style.marginTop = '15px'
             h1.style.paddingLeft = '20px'
