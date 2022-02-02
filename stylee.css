@@ -160,3 +160,50 @@ button.social-signin.twitter {
 button.social-signin.google {
   background: #DD4B39;
 }
+
+
+
+
+
+.input-group .form-control{
+  margin-top:40px
+}
+
+.bottom {
+  left: -30px;
+}
+
+
+.navdiv{
+  margin-left:77%
+}
+
+@media screen and (max-width:1600px) {
+  .navdiv{
+    margin-left:58%
+  }
+}
+
+@media screen and (max-width:1350px) {
+  .navdiv{
+    margin-left:67%
+  }
+}
+
+@media screen and (max-width:1150px) {
+  .navdiv{
+    margin-left:63%
+  }
+}
+
+ @media screen and (max-width:1005px) {
+  .navdiv{
+    margin-left:50%
+  }
+} 
+
+@media screen and (max-width:755px) {
+  .navdiv{
+    margin-left:40%
+  }
+} 

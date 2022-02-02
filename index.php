@@ -6,12 +6,8 @@ session_start();
   }
   
   
+  // include "fbconfig.php";
   include "login.php";
-  include "fbconfig.php";
-
-
-
-
 ?> 
 
 <!DOCTYPE html>
@@ -48,7 +44,8 @@ session_start();
                     <input type='password' minlength="2" maxlength="16" placeholder="Password" name='password' required>
                 </div>
                 <div class='input-group'>
-                    <input type="submit" name="signin_submit" value="Sign in" />
+                  <input type="submit" name="signin_submit" value="Sign in" />
+                  <p class='login-register-text' >Don't have an account <a href="register.php">Sign Up here</a></p>
                 </div>
               </form>
             </div>
@@ -64,13 +61,15 @@ session_start();
                 <i>Log in with Twitter</i>
               </button>
             </a>
-              <?php echo "<a href='" . $client->createAuthUrl() . "'>"?></i>
-                
-                <button class="social-signin google">
-                  <i>Log in with Google+</i>
-                </button>
-              <?php "</a>"?>
-            <p class='login-register-text'>Don't have an account<a href="register.php">Sign Up here</a></p>
+
+            <?php echo "<a href='" . $client->createAuthUrl() . "'>"?></i>
+              <button class="social-signin google">
+                <i>Log in with Google+</i>
+              </button>
+            <?php "</a>"?>
+      
+            <a href="startbisnes.php"> Create Your Bisnes  </a>
+
         </div>
         <div class="or" style="margin-top: -35px;">OR</div>
       </div>

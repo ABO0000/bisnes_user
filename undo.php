@@ -71,3 +71,11 @@
       </div>
     <?php }else{?> 
       <?php }?>
+
+
+
+
+      const or = this.dayViewDateEle.textContent
+  // console.log($or)
+  var JSnewVar = "<?php $bisnesesClass->connect()->query("SELECT * FROM `calendars` where date = "' + or + "') ;?>";
+  console.log(JSnewVar, 'JSnewVar')
